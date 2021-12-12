@@ -1,5 +1,8 @@
 package guru.springframework.api.domain;
 
+import lombok.Generated;
+import org.springframework.http.ResponseEntity;
+
 import java.util.HashMap;
 import java.util.Map;
 
