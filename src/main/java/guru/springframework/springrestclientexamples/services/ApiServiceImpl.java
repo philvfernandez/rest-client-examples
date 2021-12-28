@@ -24,7 +24,7 @@ public class ApiServiceImpl implements ApiService{
     @Override
     public List<User> getUsers(Integer limit) {
 
-        User[] user = restTemplate.getForObject("https://fakestoreapi.com/users",User[].class);
+        User[] user = restTemplate.getForObject("https://fakestoreapi.com/users?limit=" + limit,User[].class);
 
         List<User> userData = new ArrayList<User>(Arrays.asList(user));
         return userData;
